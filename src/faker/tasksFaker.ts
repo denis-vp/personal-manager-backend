@@ -22,4 +22,4 @@ export const generateTasks = (count: number) => {
     }
 }
 
-generateTasks(100);
+generateTasks(10);

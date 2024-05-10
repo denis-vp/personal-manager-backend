@@ -24,4 +24,4 @@ const generateNotes = async (count: number) => {
     }
 };
 
-generateNotes(10);
+generateNotes(2);
