@@ -11,6 +11,7 @@ export const getNotes = async (req: Request, res: Response) => {
   try {
     const notes = await noteRepository.getNotes(page, pageSize);
 
+    // TODO: move the sorting logic to the repository
     if (titleSortOrder === "ASC") {
       notes.sort((a, b) => a.title.localeCompare(b.title));
     } else if (titleSortOrder === "DESC") {

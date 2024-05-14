@@ -12,7 +12,7 @@ export const getTask = async (id: string) => {
         throw new Error("Task not found");
     }
     return task;
-}
+};
 
 export const addTask = async (task: Task) => {
     tasks.push(task);

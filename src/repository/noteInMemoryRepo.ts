@@ -20,7 +20,7 @@ export const getNote = async (id: string) => {
         throw new Error("Note not found");
     }
     return note;
-}
+};
 
 export const addNote = async (note: Note) => {
     notes.push(note);
@@ -42,6 +42,6 @@ export const deleteNote = async (id: string) => {
         throw new Error("Note not found");
     }
     notes.splice(index, 1);
-}
+};
 
 export default { getNotes, getNotesByTaskId, getUnassociatedNotes, getNote, addNote, updateNote, deleteNote};
